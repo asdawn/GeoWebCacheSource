@@ -37,7 +37,7 @@ function GeoWebCacheSource(options){
 		var halfx = parseInt(x / half);
 		var halfy = parseInt(y / half);
 		x=parseInt(x);
-		y=parseInt(y)+1;
+		y=parseInt(y);
 		var url=tileRoot+"/EPSG_"+srid+"_"+padLeft_(2,z)+"/"+padLeft_(digits,halfx)+"_"+padLeft_(digits,halfy)+"/"+padLeft_(2*digits,x)+"_"+padLeft_(2*digits,y)+"."+format;
 		return url;
 	};
